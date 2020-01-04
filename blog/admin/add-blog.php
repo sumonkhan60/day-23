@@ -30,13 +30,35 @@ if(isset($_GET['logout'])) {
                         <div class="form-group row">
                             <label for="inputEmail3" class="col-sm-3 col-form-label">Category Name</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" name="category_name">
+                                <select name="category_name" class="form-control">
+                                    <option>---Select Category Name---</option>
+                                    <option value="1">Category One</option>
+                                    <option value="2">Category Two</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="inputPassword3" class="col-sm-3 col-form-label">Category Description</label>
+                            <label for="inputPassword3" class="col-sm-3 col-form-label">Blog Title</label>
                             <div class="col-sm-9">
-                                <textarea class="form-control" name="category_description"></textarea>
+                                <input type="text" name="blog_name" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword3" class="col-sm-3 col-form-label">Short Description</label>
+                            <div class="col-sm-9">
+                                <textarea class="form-control" name="short_description"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword3" class="col-sm-3 col-form-label">Long Description</label>
+                            <div class="col-sm-9">
+                                <textarea class="form-control" name="long_description"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword3" class="col-sm-3 col-form-label">Blog Image</label>
+                            <div class="col-sm-9">
+                                <input type="file" name="blog_image" accept="image/*" />
                             </div>
                         </div>
                         <div class="form-group row">
